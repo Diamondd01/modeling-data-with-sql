@@ -279,7 +279,7 @@ module.exports = {
               ON
                 cities.country_id = countries.country_id;
             `, { type: Sequelize.QueryTypes.SELECT })
-              .then((dbRes) => { // Replace the .then() block
+              .then((dbRes) => { 
                 res.status(200).send(dbRes);
               })
               .catch(err => {
